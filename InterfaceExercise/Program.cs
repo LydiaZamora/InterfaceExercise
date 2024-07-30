@@ -6,25 +6,40 @@ namespace InterfaceExercise
     {
         static void Main(string[] args)
         {
-            //TODO Be sure to follow BEST PRACTICES when creating classes and interfaces
-
-            //In each of your Car, Truck, and SUV classes
-
-                /* Create 2 members that are specific to each class
-                 * Example for Car: public bool HasTrunk { get; set; }
-                 * Example for SUV: public int NumberOfSeats { get; set; }
-                 *
-                 * Then, Set each class to inherit from both IVehicle and ICompany and implement their members.
-                 */
-
+            //TODO 
             //Now, create objects of your 3 classes and give their members values.
             //Creatively display and organize their values
-            
+
             //Option for displaying values: 
             //Create a stubbed out method called DisplayDetails in your IVehicle interface.
             //Implement the stubbed out method in the derived classes.
             //In the scope of them method, use string interpolation to display property values.
             //In order to also interpolate values from ICompany, research how to extend interfaces.
+
+            var myCar = new Car();
+
+            var newTruck = new Truck();
+
+            var usedSUV = new SUV();
+
+            myCar.DisplayDetails();
+            myCar.Drive();
+            myCar.Reverse();
+            myCar.Park();
+
+            Console.WriteLine("------------------------------------------------------------------------------------------------------------------------------------------------------------------");
+
+            newTruck.DisplayDetails();
+            newTruck.Drive();
+            newTruck.Reverse();
+            newTruck.Park();
+
+            Console.WriteLine("------------------------------------------------------------------------------------------------------------------------------------------------------------------");
+            
+            usedSUV.DisplayDetails();
+            usedSUV.Drive();
+            usedSUV.Reverse();
+            usedSUV.Park();
             
         }
     }

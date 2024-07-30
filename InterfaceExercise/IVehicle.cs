@@ -1,11 +1,19 @@
 ﻿using System;
 namespace InterfaceExercise
 {
-	public class IVehicle
-	{
-		public IVehicle()
-		{
-		}
-	}
+    public interface IVehicle
+    {
+        public string Model { get; set; }
+        public string Make { get; set; }
+        public int Year { get; set; }
+        public bool HasChangedGears { get; set; }
+
+        public void Drive();
+        public void Reverse();
+        public void Park();
+        public void ChangedGears(bool isChanged);
+
+        public void DisplayDetails();
+    }
 }
 
