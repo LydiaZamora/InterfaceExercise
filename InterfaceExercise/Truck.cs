@@ -11,7 +11,7 @@ namespace InterfaceExercise
         public string Make { get; set; } = "Toyota";
         public int Year { get; set; } = 2024;
         public string Logo { get; set; } = "Default";
-        public string CompanyName { get; set; } = "Default";
+        public string OriginCountry { get; set; } = "Default";
         public int YearFounded { get; set; } = 1980;
         public double CustomerRating { get; set; } = 4.5;
         public bool HasChangedGears { get; set; } = true;
@@ -59,14 +59,11 @@ namespace InterfaceExercise
             }
         }
 
-        public void ChangedGears(bool isChanged)
-        {
-            HasChangedGears = isChanged;
-        }
+       
 
         public void DisplayDetails()
         {
-            Console.WriteLine($"Year: {Year}, Make:{Make}, Model:{Model}, Logo:{Logo}, Company Name:{CompanyName}, Year Founded:{YearFounded}, Customer Rating:{CustomerRating}, Number Of Wheels:{NumberOfWheels}, Has Four Wheel Drive:{HasFourWheelDrive}");
+            Console.WriteLine($"Year: {Year}, Make:{Make}, Model:{Model}, Logo:{Logo}, Origin Country:{OriginCountry}, Year Founded:{YearFounded}, Customer Rating:{CustomerRating}, Number Of Wheels:{NumberOfWheels}, Has Four Wheel Drive:{HasFourWheelDrive}");
         }
     }
 }

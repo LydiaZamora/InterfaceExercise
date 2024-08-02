@@ -1,7 +1,7 @@
 ﻿using System;
 namespace InterfaceExercise
 {
-    public interface IVehicle
+    public interface IVehicle 
     {
         public string Model { get; set; }
         public string Make { get; set; }
@@ -11,7 +11,7 @@ namespace InterfaceExercise
         public void Drive();
         public void Reverse();
         public void Park();
-        public void ChangedGears(bool isChanged);
+        
 
         public void DisplayDetails();
     }

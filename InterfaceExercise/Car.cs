@@ -8,8 +8,8 @@ namespace InterfaceExercise
         public string Make { get; set; } = "Generic";
         public int Year { get; set; } = 2024;
         public string Logo { get; set; } = "Default";
-        public string CompanyName { get; set; } = "Default";
-        public int YearFounded { get; set; } = 1980;
+        public string OriginCountry { get; set; } = "Default";
+        public int YearFounded { get; set; } = 0;
         public double CustomerRating { get; set; } = 4.5;
         public bool HasChangedGears { get; set; } = true;
 
@@ -41,7 +41,7 @@ namespace InterfaceExercise
             if (HasChangedGears == true)
             {
                 Console.WriteLine($"{GetType().Name} now parked.");
-                HasChangedGears = false;
+                
             }
             else
             {
@@ -49,10 +49,6 @@ namespace InterfaceExercise
             }
         }
 
-        public void ChangedGears(bool isChanged)
-        {
-            HasChangedGears = isChanged;
-        }
 
         public Car()
 		{
@@ -60,7 +56,7 @@ namespace InterfaceExercise
 	
 		public void DisplayDetails()
         {
-            Console.WriteLine($"Year: {Year}, Make:{Make}, Model:{Model}, Logo:{Logo}, Company Name:{CompanyName}, Year Founded:{YearFounded}, Customer Rating:{CustomerRating}, NumberOfDoors:{NumberOfDoors}, Automatic:{Automatic}");
+            Console.WriteLine($"Year: {Year}, Make:{Make}, Model:{Model}, Logo:{Logo}, Origin Country:{OriginCountry}, Year Founded:{YearFounded}, Customer Rating:{CustomerRating}, NumberOfDoors:{NumberOfDoors}, Automatic:{Automatic}");
         }
 
 

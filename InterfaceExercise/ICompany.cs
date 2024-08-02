@@ -5,7 +5,7 @@ namespace InterfaceExercise
 	{
    
      public string Logo { get; set; }
-     public string CompanyName { get; set; }
+     public string OriginCountry { get; set; }
      public int YearFounded { get; set; }
      public double CustomerRating { get; set; }
 
